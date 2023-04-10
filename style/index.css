@@ -1,0 +1,58 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #000;
+  background-color: #fff;
+}
+
+header {
+  text-align: center;
+  margin: 20px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+}
+
+.bob {
+  position: absolute;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+}
+
+.bob a {
+  color: #000;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  color: #000;
+  background-color: #d5e8d4;
+  text-align: center;
+  border: 3px solid #000;
+  margin: 10px;
+  overflow: hidden;
+  width: 100px;
+}
+
+#bob a:hover {
+  color: #ff0000;
+}
+
+#bob a:active {
+  color: #4b3737;
+}
