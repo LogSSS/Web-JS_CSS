@@ -46,14 +46,13 @@ button.addEventListener("click", function () {
 });
 
 function triangle(first, first_type, second, second_type) {
-
   console.log("<=============================================>");
 
   let type_valide = type_validator(first, first_type, second, second_type);
   if (type_valide) {
     console.log(type_valide);
     console.log(info);
-    return;
+    return "failed";
   }
 
   let a, b, c, alpha, beta;
@@ -63,7 +62,7 @@ function triangle(first, first_type, second, second_type) {
   if (data_valide) {
     console.log(data_valide);
     console.log(info);
-    return;
+    return "failed";
   }
 
   [a, b, c, alpha, beta] = calculate(a, b, c, alpha, beta);
@@ -75,7 +74,7 @@ function triangle(first, first_type, second, second_type) {
   console.log("c = " + c);
   console.log("alpha = " + alpha);
   console.log("beta = " + beta);
-  console.log("success");
+  return "success";
 }
 
 function calculate(a, b, c, alpha, beta) {
