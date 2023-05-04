@@ -52,7 +52,8 @@ function triangle(first, first_type, second, second_type) {
   if (type_valide) {
     console.log(type_valide);
     console.log(info);
-    return "failed";
+    console.log("failed");
+    return false;
   }
 
   let a, b, c, alpha, beta;
@@ -62,7 +63,8 @@ function triangle(first, first_type, second, second_type) {
   if (data_valide) {
     console.log(data_valide);
     console.log(info);
-    return "failed";
+    console.log("failed");
+    return false;
   }
 
   [a, b, c, alpha, beta] = calculate(a, b, c, alpha, beta);
@@ -74,7 +76,8 @@ function triangle(first, first_type, second, second_type) {
   console.log("c = " + c);
   console.log("alpha = " + alpha);
   console.log("beta = " + beta);
-  return "success";
+  console.log("success");
+  return true;
 }
 
 function calculate(a, b, c, alpha, beta) {
