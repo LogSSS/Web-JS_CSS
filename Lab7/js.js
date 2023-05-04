@@ -34,7 +34,6 @@ console.log(helper);
 const button = document.getElementById("calculate");
 
 function help() {
-  console.clear();
   console.log(helper);
 }
 
@@ -47,7 +46,7 @@ button.addEventListener("click", function () {
 });
 
 function triangle(first, first_type, second, second_type) {
-  console.clear();
+
   console.log("<=============================================>");
 
   let type_valide = type_validator(first, first_type, second, second_type);
