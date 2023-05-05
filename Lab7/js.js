@@ -93,27 +93,14 @@ function calculate(a, b, c, alpha, beta) {
     c = a / Math.sin(alpha * (Math.PI / 180));
     b = Math.sqrt(c * c - a * a);
     beta = 90 - alpha;
-  } else if (b && alpha) {
-    c = b / Math.cos(alpha * (Math.PI / 180));
-    a = Math.sqrt(c * c - b * b);
-    beta = 90 - alpha;
   } else if (c && alpha) {
     beta = 90 - alpha;
     a = c * Math.sin(alpha * (Math.PI / 180));
     b = c * Math.cos(alpha * (Math.PI / 180));
   } else if (a && beta) {
-    c = a / Math.sin(beta * (Math.PI / 180));
-    b = Math.sqrt(c * c - a * a);
+    b = a * Math.tan(beta * (Math.PI / 180));
+    c = Math.sqrt(a * a + b * b);
     alpha = 90 - beta;
-  } else if (b && beta) {
-    c = b / Math.cos(beta * (Math.PI / 180));
-    a = Math.sqrt(c * c - b * b);
-    alpha = 90 - beta;
-    return [a, b, c, alpha, beta];
-  } else if (c && beta) {
-    alpha = 90 - beta;
-    a = c * Math.sin(beta * (Math.PI / 180));
-    b = c * Math.cos(beta * (Math.PI / 180));
   }
 
   return [a, b, c, alpha, beta];
@@ -136,8 +123,8 @@ function data_parser(first, first_type, second, second_type) {
     if (second_type === "leg") alpha = first;
   }
   if (first_type === "adjacent angle" || second_type === "adjacent angle") {
-    if (first_type === "leg") alpha = second;
-    if (second_type === "leg") alpha = first;
+    if (first_type === "leg") beta = second;
+    if (second_type === "leg") beta = first;
   }
 
   return [a, b, c, alpha, beta];
