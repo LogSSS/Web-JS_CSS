@@ -21,7 +21,6 @@ let helper =
   "<   3) leg and opposite angle                 >\n" +
   "<   4) leg and adjacent angle                 >\n" +
   "<   5) hypotenuse and angle                   >\n" +
-  "<   6) adjacent angle and opposite angle      >\n" +
   "<                 IN ANY ORDER                >\n" +
   "<=============================================>\n" +
   "<         For 'Data' fields available:        >\n" +
@@ -66,10 +65,7 @@ function triangle(first, first_type, second, second_type) {
     console.log("failed");
     return false;
   }
-
   [a, b, c, alpha, beta] = calculate(a, b, c, alpha, beta);
-  alpha = (alpha * 180) / Math.PI;
-  beta = (beta * 180) / Math.PI;
 
   console.log("a = " + a);
   console.log("b = " + b);
@@ -81,59 +77,43 @@ function triangle(first, first_type, second, second_type) {
 }
 
 function calculate(a, b, c, alpha, beta) {
-  if (a !== undefined && b !== undefined) {
+  if (a && b) {
     c = Math.sqrt(a * a + b * b);
-    alpha = Math.asin(a / c);
-    beta = Math.asin(b / c);
-    return [a, b, c, alpha, beta];
-  }
-  if (a !== undefined && c !== undefined) {
+    alpha = (Math.asin(a / c) * 180) / Math.PI;
+    beta = (Math.asin(b / c) * 180) / Math.PI;
+  } else if (a && c) {
     b = Math.sqrt(c * c - a * a);
-    alpha = Math.asin(a / c);
-    beta = Math.asin(b / c);
-    return [a, b, c, alpha, beta];
-  }
-  if (b !== undefined && c !== undefined) {
+    alpha = (Math.asin(a / c) * 180) / Math.PI;
+    beta = (Math.asin(b / c) * 180) / Math.PI;
+  } else if (b && c) {
     a = Math.sqrt(c * c - b * b);
-    alpha = Math.asin(a / c);
-    beta = Math.asin(b / c);
+    beta = (Math.asin(a / c) * 180) / Math.PI;
+    alpha = (Math.asin(b / c) * 180) / Math.PI;
+  } else if (a && alpha) {
+    c = a / Math.sin(alpha * (Math.PI / 180));
+    b = Math.sqrt(c * c - a * a);
+    beta = 90 - alpha;
+  } else if (b && alpha) {
+    c = b / Math.cos(alpha * (Math.PI / 180));
+    a = Math.sqrt(c * c - b * b);
+    beta = 90 - alpha;
+  } else if (c && alpha) {
+    beta = 90 - alpha;
+    a = c * Math.sin(alpha * (Math.PI / 180));
+    b = c * Math.cos(alpha * (Math.PI / 180));
+  } else if (a && beta) {
+    c = a / Math.sin(beta * (Math.PI / 180));
+    b = Math.sqrt(c * c - a * a);
+    alpha = 90 - beta;
+  } else if (b && beta) {
+    c = b / Math.cos(beta * (Math.PI / 180));
+    a = Math.sqrt(c * c - b * b);
+    alpha = 90 - beta;
     return [a, b, c, alpha, beta];
-  }
-  if (a !== undefined && alpha !== undefined) {
-    b = a / Math.tan(alpha);
-    c = a / Math.sin(alpha);
-    beta = Math.asin(b / c);
-    return [a, b, c, alpha, beta];
-  }
-  if (b !== undefined && alpha !== undefined) {
-    a = b * Math.tan(alpha);
-    c = b / Math.cos(alpha);
-    beta = Math.asin(b / c);
-    return [a, b, c, alpha, beta];
-  }
-  if (c !== undefined && alpha !== undefined) {
-    a = c * Math.sin(alpha);
-    b = c * Math.cos(alpha);
-    beta = Math.asin(b / c);
-    return [a, b, c, alpha, beta];
-  }
-  if (a !== undefined && beta !== undefined) {
-    b = a * Math.tan(beta);
-    c = a / Math.sin(beta);
-    alpha = Math.asin(a / c);
-    return [a, b, c, alpha, beta];
-  }
-  if (b !== undefined && beta !== undefined) {
-    a = b / Math.tan(beta);
-    c = b / Math.cos(beta);
-    alpha = Math.asin(a / c);
-    return [a, b, c, alpha, beta];
-  }
-  if (c !== undefined && beta !== undefined) {
-    a = c * Math.sin(beta);
-    b = c * Math.cos(beta);
-    alpha = Math.asin(a / c);
-    return [a, b, c, alpha, beta];
+  } else if (c && beta) {
+    alpha = 90 - beta;
+    a = c * Math.sin(beta * (Math.PI / 180));
+    b = c * Math.cos(beta * (Math.PI / 180));
   }
 
   return [a, b, c, alpha, beta];
@@ -141,51 +121,41 @@ function calculate(a, b, c, alpha, beta) {
 
 function data_parser(first, first_type, second, second_type) {
   let a, b, c, alpha, beta;
+
   if (first_type === "leg") a = first;
-  if (second_type === "leg") b = second;
+  if (second_type === "leg") {
+    if (first_type === "leg") b = second;
+    else a = second;
+  }
   if (first_type === "hypotenuse") c = first;
   if (second_type === "hypotenuse") c = second;
   if (first_type === "angle") alpha = first;
   if (second_type === "angle") alpha = second;
   if (first_type === "opposite angle" || second_type === "opposite angle") {
     if (first_type === "leg") alpha = second;
-    if (second_type === "leg") beta = first;
-    if (first_type === "adjacent angle") alpha = second;
-    if (second_type === "adjacent angle") alpha = first;
+    if (second_type === "leg") alpha = first;
   }
   if (first_type === "adjacent angle" || second_type === "adjacent angle") {
-    if (first_type === "leg") beta = second;
-    if (second_type === "leg") alpha = second;
-    if (first_type === "opposite angle") beta = second;
-    if (second_type === "opposite angle") beta = first;
+    if (first_type === "leg") alpha = second;
+    if (second_type === "leg") alpha = first;
   }
-
-  if (alpha !== undefined) alpha = (alpha * Math.PI) / 180;
 
   return [a, b, c, alpha, beta];
 }
 
 function data_validator(a, b, c, alpha, beta) {
   let response = "";
-  if (a !== undefined && a <= 0) response += "Leg must be more than 0\n";
-  if (b !== undefined && b <= 0) response += "Leg must be more than 0\n";
-  if (c !== undefined && c <= 0) response += "Hypotenuse must be more than 0\n";
+  if (a && a <= 0) response += "Leg must be more than 0\n";
+  if (b && b <= 0) response += "Leg must be more than 0\n";
+  if (c && c <= 0) response += "Hypotenuse must be more than 0\n";
   if (
-    (alpha !== undefined && (alpha <= 0 || alpha >= 90)) ||
-    (beta !== undefined && (beta <= 0 || beta >= 90))
+    (alpha && (alpha <= 0 || alpha >= 90)) ||
+    (beta && (beta <= 0 || beta >= 90))
   )
     response += "Angles must be between 1 and 89\n";
-  else if (
-    alpha !== undefined &&
-    beta !== undefined &&
-    parseFloat(alpha) + parseFloat(beta) !== 90.0
-  )
-    response += "Sum of angles must be 90 degrees\n";
 
-  if (a !== undefined && c !== undefined && a >= c)
-    response += "Leg must be less than hypotenuse\n";
-  if (b !== undefined && c !== undefined && b >= c)
-    response += "Leg must be less than hypotenuse\n";
+  if (a && c && a >= c) response += "Leg must be less than hypotenuse\n";
+  if (b && c && b >= c) response += "Leg must be less than hypotenuse\n";
 
   return response;
 }
@@ -230,20 +200,16 @@ function type_validator(first, first_type, second, second_type) {
     response += "S1mple Angle must be with hypotenuse\n";
 
   if (
-    (first_type === "opposite angle" &&
-      !["leg", "adjacent angle"].includes(second_type)) ||
-    (second_type === "opposite angle" &&
-      !["leg", "adjacent angle"].includes(first_type))
+    (first_type === "opposite angle" && second_type !== "leg") ||
+    (second_type === "opposite angle" && first_type !== "leg")
   )
-    response += "Opposite angle must be with leg or adjacent angle\n";
+    response += "Opposite angle must be with leg\n";
 
   if (
-    (first_type === "adjacent angle" &&
-      !["leg", "opposite angle"].includes(second_type)) ||
-    (second_type === "adjacent angle" &&
-      !["leg", "opposite angle"].includes(first_type))
+    (first_type === "adjacent angle" && second_type !== "leg") ||
+    (second_type === "adjacent angle" && first_type !== "leg")
   )
-    response += "Adjacent angle must be with leg or opposite angle\n";
+    response += "Adjacent angle must be with leg\n";
 
   if (
     (first_type === "hypotenuse" && !["leg", "angle"].includes(second_type)) ||
