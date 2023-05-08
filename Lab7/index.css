@@ -40,7 +40,7 @@ body {
   width: 280px;
 }
 .calc p {
-  margin: 10;
+  margin: 10px;
   text-align: center;
   border: 1px solid #000;
   border-radius: 5px;
@@ -85,6 +85,12 @@ body {
 .calc button:hover {
   background-color: #fff;
   color: #000;
+}
+
+[class*="col-"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .col-1 {
