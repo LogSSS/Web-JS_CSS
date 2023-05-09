@@ -67,6 +67,14 @@ function triangle(first, first_type, second, second_type) {
   }
   [a, b, c, alpha, beta] = calculate(a, b, c, alpha, beta);
 
+  let sides = check_sides(a, b, c);
+  if (sides) {
+    console.log(sides);
+    console.log(info);
+    console.log("failed");
+    return false;
+  }
+
   console.log("a = " + a);
   console.log("b = " + b);
   console.log("c = " + c);
@@ -74,6 +82,12 @@ function triangle(first, first_type, second, second_type) {
   console.log("beta = " + beta);
   console.log("success");
   return true;
+}
+
+function check_sides(a, b, c) {
+  if (a + b <= c || a + c <= b || b + c <= a || a >= c || b >= c)
+    return "Change values cause triangle inequality";
+  return "";
 }
 
 function calculate(a, b, c, alpha, beta) {
@@ -102,6 +116,11 @@ function calculate(a, b, c, alpha, beta) {
     c = Math.sqrt(a * a + b * b);
     alpha = 90 - beta;
   }
+  if (!a) a = "BRUH";
+  if (!b) b = "BRUH";
+  if (!c) c = "BRUH";
+  if (!alpha) alpha = "BRUH";
+  if (!beta) beta = "BRUH";
 
   return [a, b, c, alpha, beta];
 }
