@@ -1,0 +1,85 @@
+@import "shared.css";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.header {
+  text-align: center;
+  font-size: 22px;
+}
+
+.back {
+  font-style: italic;
+}
+
+.centered {
+  text-align: center;
+}
+
+.table thead tr {
+  background-color: #008000;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: #7c7c7c;
+  color: #fcbdc7;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.table {
+  border-collapse: collapse;
+}
+
+.table tbody,
+thead tr th,
+td {
+  height: 30px;
+  width: 200px;
+  border: 3px;
+  border-style: ridge;
+  border-color: #ff6a00;
+}
+
+.table thead tr th:last-child,
+.table tbody tr td:last-child {
+  text-align: right;
+}
+
+.col-12 thead {
+  font-size: 130%;
+}
+
+.col-12 tbody {
+  font-size: 120%;
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+  .col-m-12 thead {
+    font-size: 120%;
+  }
+  .col-m-12 tbody {
+    font-size: 110%;
+  }
+}
+
+@media (max-width: 768px) {
+  .col-s-12 thead {
+    font-size: 110%;
+  }
+  .col-s-12 tbody {
+    font-size: 100%;
+  }
+}

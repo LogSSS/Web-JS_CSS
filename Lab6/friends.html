@@ -1,111 +1,68 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Персональна сторінка</title>
-    <style>
-        .header {
-            text-align: center;
-            font-size: 22px;
-        }
+    <link rel="stylesheet" href="css/friends.css" />
+  </head>
 
-        .back{
-            font-style: italic;
-        }
-
-        .centered{
-            text-align: center;
-        }
-        
-        .table thead tr{
-            background-color: #008000;
-            color: #ffffff;
-            font-weight:bold;
-        }
-
-        .table tbody tr:nth-child(odd){
-            background-color: #7c7c7c;
-            color: #fcbdc7;
-        }
-
-        .table tbody tr:nth-child(even){
-            background-color: #ffffff;
-            color: #000000;
-        }
-
-        .table {
-            border-collapse: collapse;        
-        }
-
-        .table tbody,thead tr th, td{
-            height: 30px;
-            width: 200px;
-            border: 3px;
-            border-style: ridge;
-            border-color: #ff6a00;
-        }
-
-        .table thead tr th:last-child,
-        .table tbody tr td:last-child{
-            text-align: right;
-        }
-    </style>
-</head>
-
-<body>
+  <body>
     <h1 class="header">Друзі Шкварка Назарія Васильовича</h1>
 
     <a href="index.html" class="back">Назад на головну</a>
 
     <h2 class="centered">Мої друзі</h2>
-
-    <table class="table centered">
-        <caption>Друзі</caption>
-        <thead>
+    <div class="container">
+      <div class="col-12 col-m-12 col-s-12">
+        <table class="table centered">
+          <caption>
+            Друзі
+          </caption>
+          <thead>
             <tr>
-                <th>Прізвище</th>
-                <th>Ім'я</th>
-                <th>Дата народження</th>
-                <th>Адреса проживання</th>
-                <th>Контактний телефон</th>
+              <th>Прізвище</th>
+              <th>Ім'я</th>
+              <th>Дата народження</th>
+              <th>Адреса проживання</th>
+              <th>Контактний телефон</th>
             </tr>
-        </thead>
-        
-        <tbody>
-            <tr>
-                <td>Біланюк</td>
-                <td>Роман</td>
-                <td>18.11.2002</td>
-                <td>смт. Угорники</td>
-                <td>8 800 555 535</td>
-            </tr>
+          </thead>
 
+          <tbody>
             <tr>
-                <td>Книш</td>
-                <td>Владислав</td>
-                <td>24.03.2003</td>
-                <td>с. Рожневі Поля</td>
-                <td>&lt;номер&gt;</td>
+              <td>Біланюк</td>
+              <td>Роман</td>
+              <td>18.11.2002</td>
+              <td>смт. Угорники</td>
+              <td>8 800 555 535</td>
             </tr>
 
             <tr>
-                <td>Пиж</td>
-                <td>Максим</td>
-                <td>19.02.2003</td>
-                <td>с. Підзамочок, м. Бучач</td>
-                <td>098 276 35 64</td>
+              <td>Книш</td>
+              <td>Владислав</td>
+              <td>24.03.2003</td>
+              <td>с. Рожневі Поля</td>
+              <td>&lt;номер&gt;</td>
             </tr>
 
             <tr>
-                <td>Колінцьо</td>
-                <td>Андрій</td>
-                <td>02.04.2003</td>
-                <td>м. Снятин</td>
-                <td>099 320 05 89</td>
+              <td>Пиж</td>
+              <td>Максим</td>
+              <td>19.02.2003</td>
+              <td>с. Підзамочок, м. Бучач</td>
+              <td>098 276 35 64</td>
             </tr>
-        </tbody>
-    </table>
-</body>
 
+            <tr>
+              <td>Колінцьо</td>
+              <td>Андрій</td>
+              <td>02.04.2003</td>
+              <td>м. Снятин</td>
+              <td>099 320 05 89</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
 </html>

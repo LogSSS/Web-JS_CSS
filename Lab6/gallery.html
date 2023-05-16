@@ -1,56 +1,31 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Персональна сторінка</title>
-        <style>
-            .header {
-                text-align: center;
-                font-size: 20px;
-            }
+  <head>
+    <meta charset="UTF-8" />
+    <title>Персональна сторінка</title>
+    <link rel="stylesheet" href="css/gallery.css" />
+  </head>
 
-            .back {
-                font-style: italic;
-            }
+  <body>
+    <h1 class="header">Галерея Шкварка Назарія Васильовича</h1>
 
-            .centered {
-                text-align: center;
-            }
+    <a href="index.html" class="back">Назад на головну</a>
 
-            .h3_1{
-                font-size: 70%;
-            }
+    <h2 class="centered h2">Мої зображення</h2>
 
-            .h3_2{
-                font-size: 130%;
-            }
-
-            .h3_3{
-                font-size: 169%;
-            }
-
-            img{
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-            }
-        </style>
-    </head>
-
-    <body>
-        <h1 class="header">Галерея Шкварка Назарія Васильовича</h1>
-
-        <a href="index.html" class="back">Назад на головну</a>
-
-        <h2 class="centered h2">Мої зображення</h2>
-
-        <h3 class="centered h3_1">Зображення у цій папці</h3>
-        <img src="photo.png" alt="#404">
-
-        <h3 class="centered h3_2">Зображення у папці</h3>
-        <img src="images/photo.png" alt="#404">
-
-        <h3 class="centered h3_3">Зображення онлайн</h3>
-        <img src="https://place-hold.it/1280x1024" alt="#404">
-    </body>
+    <div class="container">
+      <div class="col-4 col-m-6 col-s-12">
+        <h3 class="centered">Зображення у цій папці</h3>
+        <img src="photo.png" alt="#404" />
+      </div>
+      <div class="col-4 col-m-6 col-s-12">
+        <h3 class="centered">Зображення у папці</h3>
+        <img src="images/photo.png" alt="#404" />
+      </div>
+      <div class="col-4 col-m-12 col-s-12">
+        <h3 class="centered">Зображення онлайн</h3>
+        <img src="https://place-hold.it/1280x1024" alt="#404" />
+      </div>
+    </div>
+  </body>
 </html>

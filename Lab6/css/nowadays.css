@@ -1,0 +1,44 @@
+@import "shared.css";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.header {
+  text-align: center;
+  font-size: 22px;
+}
+
+.back {
+  font-style: italic;
+}
+
+.centered {
+  text-align: center;
+}
+
+.ul li:nth-child(odd) {
+  background-color: #7c7c7c;
+  color: #fcbdc7;
+}
+
+.ul li:nth-child(even) {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.ol li:nth-child(3),
+.ol li:nth-child(5) {
+  cursor: pointer;
+}
+
+.ol li:nth-child(4) {
+  background-color: #0000ff;
+  color: #ffa200;
+}

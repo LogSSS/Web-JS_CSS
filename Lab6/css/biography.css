@@ -1,0 +1,89 @@
+@import "shared.css";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.header {
+  text-align: center;
+  font-size: 22px;
+}
+
+.back {
+  font-style: italic;
+}
+
+.content {
+  text-align: center;
+}
+
+.href {
+  display: block;
+  width: 169px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #00ff00;
+  background-color: #0000ff;
+  color: #ffffff;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.href:hover {
+  color: #100b3c;
+  background-color: #dd2bc2;
+}
+
+.href:active {
+  color: #ffffff;
+  background-color: #ffff00;
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5 {
+  border: 2px solid #000000;
+  margin: 5px;
+  padding: 5px;
+}
+
+.box1 {
+  color: #ffff00;
+  background-color: #0000ff;
+}
+
+.box2 {
+  color: #0b0b9b;
+  background-color: #ffa600;
+}
+
+.box3 {
+  color: #ffffff;
+  background-color: #5a5a5a;
+}
+
+.box4 {
+  color: #7f007f;
+  background-color: #ffff00;
+}
+
+.box5 {
+  color: #00ffff;
+  background-color: #490101;
+}
+
+.tocontent {
+  font-weight: bold;
+}
+
+.upbut {
+  text-transform: uppercase;
+}
