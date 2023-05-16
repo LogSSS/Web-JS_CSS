@@ -34,6 +34,8 @@ checkFolderExists()
         bobDiv.appendChild(link);
       }
     }
+    const loading = document.getElementById("loading");
+    loading.remove();
   })
   .catch((error) => {
     console.log("Error:", error);
