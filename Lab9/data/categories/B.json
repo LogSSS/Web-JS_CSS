@@ -1,0 +1,69 @@
+{
+  "catalog_items": [
+    {
+      "id": 11,
+      "short_name": "B1",
+      "name": "Item B1",
+      "description": "One",
+      "price_retail": 99,
+      "price_wholesale": 189.0,
+      "amount_retail": null,
+      "amount_wholesale": "5"
+    },
+    {
+      "id": 12,
+      "short_name": "B2",
+      "name": "Item B2",
+      "description": "Two",
+      "price_retail": 69,
+      "price_wholesale": 998,
+      "amount_retail": "1+ pos",
+      "amount_wholesale": "3"
+    },
+    {
+      "id": 13,
+      "short_name": "B3",
+      "name": "Item B3",
+      "description": "Three",
+      "price_retail": 123,
+      "price_wholesale": 705,
+      "amount_retail": "1+ pos",
+      "amount_wholesale": "7"
+    },
+    {
+      "id": 14,
+      "short_name": "B4",
+      "name": "Item B4",
+      "description": "Four",
+      "price_retail": 228,
+      "price_wholesale": 509,
+      "amount_retail": "1+ pos",
+      "amount_wholesale": "5"
+    },
+    {
+      "id": 15,
+      "short_name": "B5",
+      "name": "Item B5",
+      "description": "Five",
+      "price_retail": 100,
+      "price_wholesale": 1500,
+      "amount_retail": "1+ pos",
+      "amount_wholesale": "5"
+    },
+    {
+      "id": 16,
+      "short_name": "B6",
+      "name": "Item B6",
+      "description": "Six",
+      "price_retail": 99,
+      "price_wholesale": 1009,
+      "amount_retail": "1+ pos",
+      "amount_wholesale": "5"
+    }
+  ],
+  "category": {
+    "short_name": "B",
+    "name": "Category 1",
+    "special_instructions": "Info"
+  }
+}

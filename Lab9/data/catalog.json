@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "short_name": "A",
+    "name": "Category-A",
+    "special_instructions": "Info",
+    "url": "data/categories/A/A.json"
+  },
+  {
+    "id": 2,
+    "short_name": "B",
+    "name": "Category-B",
+    "special_instructions": "Info",
+    "url": "data/categories/B/B.json"
+  },
+  {
+    "id": 3,
+    "short_name": "C",
+    "name": "Category-C",
+    "special_instructions": "Info",
+    "url": "data/categories/C/C.json"
+  },
+  {
+    "id": 4,
+    "short_name": "D",
+    "name": "Category-D",
+    "special_instructions": "Info",
+    "url": "data/categories/D/D.json"
+  }
+
+]
