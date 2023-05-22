@@ -34,6 +34,13 @@ checkFolderExists()
         bobDiv.appendChild(link);
       }
     }
+
+    const link = document.createElement("a");
+    link.href = `Project/`;
+    link.textContent = "Project";
+
+    bobDiv.appendChild(link);
+
     const loading = document.getElementById("loading");
     loading.remove();
   })

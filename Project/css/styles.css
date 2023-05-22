@@ -1,0 +1,187 @@
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+
+header nav {
+  background-color: #0f4929;
+}
+
+nav .navbar-light .yellow {
+  color: white;
+}
+
+nav.navbar-light li a {
+  color: white;
+}
+
+.navbar-nav > li > .dropdown-menu {
+  background-color: rgb(229, 239, 163);
+  color: white;
+}
+
+.navbar-nav > li > .dropdown-menu a {
+  color: rgb(0, 0, 0);
+}
+
+.navbar-nav > li > .dropdown-menu a:hover {
+  background-color: #0f4929;
+  color: rgb(229, 239, 163);
+}
+
+nav .navbar-nav li a:hover {
+  background-color: rgb(229, 239, 163);
+}
+
+#collapsable-nav .navbar-nav li a.show {
+  background-color: rgb(229, 239, 163);
+  color: black;
+}
+
+#collapsable-nav .nav-link:hover {
+  color: black;
+}
+
+.modal-header {
+  background-color: rgb(229, 239, 163);
+  color: #0f4929;
+  border-color: rgb(229, 239, 163);
+}
+
+.modal-body {
+  background-color: #0f4929;
+  color: black;
+  border-color: rgb(229, 239, 163);
+}
+
+.modal-body p {
+  color: rgb(229, 239, 163);
+}
+
+.modal-footer {
+  background-color: #0f4929;
+  border-color: rgb(229, 239, 163);
+}
+
+.modal-footer .btn {
+  color: #0f4929;
+  background-color: rgb(229, 239, 163);
+  border-color: #0b4122;
+}
+
+.modal-footer .btn:hover {
+  background-color: #0f4929;
+  color: rgb(229, 239, 163);
+  border-color: rgb(229, 239, 163);
+}
+
+footer {
+  background-color: #0b4122;
+  color: white;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  background-color: rgb(229, 239, 163);
+  color: black;
+  text-decoration: none;
+}
+
+.about-us:hover {
+  background-color: rgb(229, 239, 163);
+  color: black;
+}
+
+.lds-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #0b4122;
+  margin: -4px 0 0 -4px;
+}
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+}
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

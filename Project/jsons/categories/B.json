@@ -1,0 +1,99 @@
+{
+  "catalog_items": [
+    {
+      "id": 11,
+      "short_name": "B-1",
+      "name": "B1",
+      "description": "Product",
+      "price_retail": 0,
+      "price_wholesale": 0,
+      "amount_retail": "0+ pos",
+      "amount_wholesale": "0+ pos"
+    },
+    {
+      "id": 12,
+      "short_name": "B-1",
+      "name": "B2",
+      "description": "Product",
+      "price_retail": 0,
+      "price_wholesale": 0,
+      "amount_retail": "0+ pos",
+      "amount_wholesale": "0+ pos"
+    },
+    {
+      "id": 13,
+      "short_name": "B-1",
+      "name": "B3",
+      "description": "Product",
+      "price_retail": 0,
+      "price_wholesale": 0,
+      "amount_retail": "0+ pos",
+      "amount_wholesale": "0+ pos"
+    },
+    {
+      "id": 14,
+      "short_name": "B-1",
+      "name": "B4",
+      "description": "Product",
+      "price_retail": 0,
+      "price_wholesale": 0,
+      "amount_retail": "0+ pos",
+      "amount_wholesale": "0+ pos"
+    },
+    {
+      "id": 15,
+      "short_name": "B-1",
+      "name": "B5",
+      "description": "Product",
+      "price_retail": 0,
+      "price_wholesale": 0,
+      "amount_retail": "0+ pos",
+      "amount_wholesale": "0+ pos"
+    },
+    {
+      "id": 16,
+      "short_name": "B-1",
+      "name": "B6",
+      "description": "Product",
+      "price_retail": 0,
+      "price_wholesale": 0,
+      "amount_retail": "0+ pos",
+      "amount_wholesale": "0+ pos"
+    },
+    {
+      "id": 17,
+      "short_name": "B-1",
+      "name": "B7",
+      "description": "Product",
+      "price_retail": 0,
+      "price_wholesale": 0,
+      "amount_retail": "0+ pos",
+      "amount_wholesale": "0+ pos"
+    },
+    {
+      "id": 18,
+      "short_name": "B-1",
+      "name": "B8",
+      "description": "Product",
+      "price_retail": 0,
+      "price_wholesale": 0,
+      "amount_retail": "0+ pos",
+      "amount_wholesale": "0+ pos"
+    },
+    {
+      "id": 19,
+      "short_name": "B-1",
+      "name": "B9",
+      "description": "Product",
+      "price_retail": 0,
+      "price_wholesale": 0,
+      "amount_retail": "0+ pos",
+      "amount_wholesale": "0+ pos"
+    }
+  ],
+  "category": {
+    "short_name": "B",
+    "name": "Animals",
+    "special_instructions": "Information"
+  }
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "short_name": "A",
+    "name": "Cities",
+    "special_instructions": "Information",
+    "url": "jsons/categories/A/A.json"
+  },
+  {
+    "id": 2,
+    "short_name": "B",
+    "name": "Animals",
+    "special_instructions": "Information",
+    "url": "jsons/categories/B/B.json"
+  },
+  {
+    "id": 3,
+    "short_name": "C",
+    "name": "Portraits",
+    "special_instructions": "Information",
+    "url": "jsons/categories/C/C.json"
+  },
+  {
+    "id": 4,
+    "short_name": "D",
+    "name": "Landscapes",
+    "special_instructions": "Information",
+    "url": "jsons/categories/D/D.json"
+  },
+  {
+    "id": 5,
+    "short_name": "E",
+    "name": "Abstraction",
+    "special_instructions": "Information",
+    "url": "jsons/categories/E/E.json"
+  },
+  {
+    "id": 6,
+    "short_name": "J",
+    "name": "Still lifes",
+    "special_instructions": "Information",
+    "url": "jsons/categories/J/J.json"
+  }
+]

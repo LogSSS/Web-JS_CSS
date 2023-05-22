@@ -1,0 +1,69 @@
+{
+  "catalog_items": [
+    {
+      "id": 11,
+      "short_name": "C-1",
+      "name": "C1",
+      "description": "Product",
+      "price_retail": 0,
+      "price_wholesale": 0,
+      "amount_retail": "0+ pos",
+      "amount_wholesale": "0+ pos"
+    },
+    {
+      "id": 12,
+      "short_name": "C-1",
+      "name": "С2",
+      "description": "Product",
+      "price_retail": 0,
+      "price_wholesale": 0,
+      "amount_retail": "0+ pos",
+      "amount_wholesale": "0+ pos"
+    },
+    {
+      "id": 13,
+      "short_name": "C-1",
+      "name": "С3",
+      "description": "Product",
+      "price_retail": 0,
+      "price_wholesale": 0,
+      "amount_retail": "0+ pos",
+      "amount_wholesale": "0+ pos"
+    },
+    {
+      "id": 14,
+      "short_name": "C-1",
+      "name": "C4",
+      "description": "Product",
+      "price_retail": 0,
+      "price_wholesale": 0,
+      "amount_retail": "0+ pos",
+      "amount_wholesale": "0+ pos"
+    },
+    {
+      "id": 15,
+      "short_name": "C-1",
+      "name": "C5",
+      "description": "Product",
+      "price_retail": 0,
+      "price_wholesale": 0,
+      "amount_retail": "0+ pos",
+      "amount_wholesale": "0+ pos"
+    },
+    {
+      "id": 16,
+      "short_name": "C-1",
+      "name": "C6",
+      "description": "Product",
+      "price_retail": 0,
+      "price_wholesale": 0,
+      "amount_retail": "0+ pos",
+      "amount_wholesale": "0+ pos"
+    }
+  ],
+  "category": {
+    "short_name": "C",
+    "name": "Portraits",
+    "special_instructions": "Information"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "catalog_items": [
+    {
+      "id": 11,
+      "short_name": "A-1",
+      "name": "A1",
+      "description": "Product",
+      "price_retail": 0,
+      "price_wholesale": 0,
+      "amount_retail": "0+ pos",
+      "amount_wholesale": "0+ pos"
+    },
+    {
+      "id": 12,
+      "short_name": "A-1",
+      "name": "A2",
+      "description": "Product",
+      "price_retail": 0,
+      "price_wholesale": 0,
+      "amount_retail": "0+ pos",
+      "amount_wholesale": "0+ pos"
+    },
+    {
+      "id": 13,
+      "short_name": "A-1",
+      "name": "A3",
+      "description": "Product",
+      "price_retail": 0,
+      "price_wholesale": 0,
+      "amount_retail": "0+ pos",
+      "amount_wholesale": "0+ pos"
+    },
+    {
+      "id": 14,
+      "short_name": "A-1",
+      "name": "A4",
+      "description": "Product",
+      "price_retail": 0,
+      "price_wholesale": 0,
+      "amount_retail": "0+ pos",
+      "amount_wholesale": "0+ pos"
+    },
+    {
+      "id": 15,
+      "short_name": "A-1",
+      "name": "A5",
+      "description": "Product",
+      "price_retail": 0,
+      "price_wholesale": 0,
+      "amount_retail": "0+ pos",
+      "amount_wholesale": "0+ pos"
+    },
+    {
+      "id": 16,
+      "short_name": "A-1",
+      "name": "A6",
+      "description": "Product",
+      "price_retail": 0,
+      "price_wholesale": 0,
+      "amount_retail": "0+ pos",
+      "amount_wholesale": "0+ pos"
+    },
+    {
+      "id": 17,
+      "short_name": "A-1",
+      "name": "A7",
+      "description": "Product",
+      "price_retail": 0,
+      "price_wholesale": 0,
+      "amount_retail": "0+ pos",
+      "amount_wholesale": "0+ pos"
+    },
+    {
+      "id": 18,
+      "short_name": "A-1",
+      "name": "A8",
+      "description": "Product",
+      "price_retail": 0,
+      "price_wholesale": 0,
+      "amount_retail": "0+ pos",
+      "amount_wholesale": "0+ pos"
+    },
+    {
+      "id": 19,
+      "short_name": "A-1",
+      "name": "A9",
+      "description": "Product",
+      "price_retail": 0,
+      "price_wholesale": 0,
+      "amount_retail": "0+ pos",
+      "amount_wholesale": "0+ pos"
+    }
+    
+  ],
+  "category": {
+    "short_name": "A",
+    "name": "Cities",
+    "special_instructions": "Instruction"
+  }
+}

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Art is an Explosion!</title>
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-icons.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!--  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="main_img">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <a class="navbar-brand fonts" href="index.html">Art Gallery</a>
+
+          <button
+            class="navbar-toggler custom-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsable-nav"
+            aria-controls="collapsable-nav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-end mt-3 mt-lg-0"
+            id="collapsable-nav"
+          >
+            <ul class="navbar-nav text-center">
+              <li class="nav-item my-1 my-lg-0">
+                <a
+                  class="nav-link mx-2 active"
+                  id="navHomeButton"
+                  aria-current="page"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+
+              <li class="nav-item my-1 my-lg-0">
+                <a
+                  class="nav-link mx-2"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  >Order a picture</a
+                >
+              </li>
+
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Order an original picture
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close btn-close-black"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+
+                    <div class="modal-body">
+                      <div class="form-floating mb-4">
+                        <input
+                          class="form-control"
+                          id="Subject"
+                          placeholder="Number of square meters"
+                        />
+                        <label for="floatingInputM"
+                          >Subject of the picture</label
+                        >
+                      </div>
+                      <div class="form-floating mb-2">
+                        <input
+                          class="form-control"
+                          id="Height"
+                          placeholder="Price per square meter"
+                        />
+                        <label for="floatingInputP"
+                          >Height of the picture (cm)</label
+                        >
+                      </div>
+                      <div class="form-floating mb-2">
+                        <input
+                          class="form-control"
+                          id="Width"
+                          placeholder="Price per square meter"
+                        />
+                        <label for="floatingInputP"
+                          >Width of the picture (cm)</label
+                        >
+                      </div>
+                      <div>
+                        <p class="text-start m-1" id="result"></p>
+                      </div>
+                    </div>
+
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        onclick="$ns.getOrder()"
+                      >
+                        Order
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <li class="nav-item dropdown my-1 my-lg-0">
+                <a
+                  class="nav-link dropdown-toggle mx-2"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Assortment
+                </a>
+                <ul
+                  class="dropdown-menu text-center"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      id="navBukovel"
+                      href="#"
+                      onclick="$ns.loadCategoryItems('A')"
+                      >Cities</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      id="navYaremche"
+                      href="#"
+                      onclick="$ns.loadCategoryItems('B')"
+                      >Animals</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      id="navIvano-Frankivsk"
+                      href="#"
+                      onclick="$ns.loadCategoryItems('C')"
+                      >Portraits</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      id="navVorohta"
+                      href="#"
+                      onclick="$ns.loadCategoryItems('D')"
+                      >Landscapes</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      id="navPolyanytsya"
+                      href="#"
+                      onclick="$ns.loadCategoryItems('E')"
+                      >Abstraction</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      id="navPolyanytsya"
+                      href="#"
+                      onclick="$ns.loadCategoryItems('J')"
+                      >Still lifes</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item my-1 my-lg-0">
+                <a
+                  class="nav-link mx-2"
+                  id="navAboutUsButton"
+                  href="#"
+                  onclick="$ns.loadAboutUsPage()"
+                  >About us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="m-3 ContainerInd">
+      <img class="image ItemInd" src="images/main.png" alt="non" />
+    </div>
+    <section id="Home"></section>
+
+    <!-- FOOTER -->
+    <footer class="text-center text-lg-start">
+      <div class="container p-4">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase" style="font-size: 30px">Art Gallery</h5>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <a
+              href="#"
+              class="mb-0"
+              style="font-size: 26px; cursor: pointer"
+              onclick="$ns.loadAboutUsPage()"
+              >About us</a
+            >
+          </div>
+
+          <div class="col-lg-5 col-md-5 mb-4 mb-md-0">
+            <h5 class="mb-1">Information For Users</h5>
+            <a class="text-uppercase" href="#" onclick="$ns.loadSpecials();"
+              >Sales</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2023 Copyright:
+        <a href="https://github.com/LogSSS/Web-JS_CSS-/tree/master/Project" target="_blank">Art Gallery</a>
+      </div>
+    </footer>
+
+    <script src="scripts/AjaxUtils.js"></script>
+    <script src="scripts/MainScript.js"></script>
+    <script src="scripts/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

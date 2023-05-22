@@ -1,0 +1,69 @@
+{
+  "catalog_items": [
+    {
+      "id": 11,
+      "short_name": "D-1",
+      "name": "D1",
+      "description": "Product",
+      "price_retail": 0,
+      "price_wholesale": 0,
+      "amount_retail": "0+ pos",
+      "amount_wholesale": "0+ pos"
+    },
+    {
+      "id": 12,
+      "short_name": "D-1",
+      "name": "D2",
+      "description": "Product",
+      "price_retail": 0,
+      "price_wholesale": 0,
+      "amount_retail": "0+ pos",
+      "amount_wholesale": "0+ pos"
+    },
+    {
+      "id": 13,
+      "short_name": "D-1",
+      "name": "D3",
+      "description": "Product",
+      "price_retail": 0,
+      "price_wholesale": 0,
+      "amount_retail": "0+ pos",
+      "amount_wholesale": "0+ pos"
+    },
+    {
+      "id": 14,
+      "short_name": "D-1",
+      "name": "D4",
+      "description": "Product",
+      "price_retail": 0,
+      "price_wholesale": 0,
+      "amount_retail": "0+ pos",
+      "amount_wholesale": "0+ pos"
+    },
+    {
+      "id": 15,
+      "short_name": "D-1",
+      "name": "D5",
+      "description": "Product",
+      "price_retail": 0,
+      "price_wholesale": 0,
+      "amount_retail": "0+ pos",
+      "amount_wholesale": "0+ pos"
+    },
+    {
+      "id": 16,
+      "short_name": "D-1",
+      "name": "D-6",
+      "description": "Product",
+      "price_retail": 0,
+      "price_wholesale": 0,
+      "amount_retail": "0+ pos",
+      "amount_wholesale": "0+ pos"
+    }
+  ],
+  "category": {
+    "short_name": "D",
+    "name": "Landscapes",
+    "special_instructions": "Information"
+  }
+}
