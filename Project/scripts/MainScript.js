@@ -268,7 +268,7 @@
           h +
           "x" +
           w +
-          "\nArea pictures: " +
+          "\nCount of pixels: " +
           h * w +
           ".";
       } else {
