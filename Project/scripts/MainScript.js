@@ -260,7 +260,7 @@
       typeof parseFloat(h) == "number" &&
       typeof parseFloat(w) == "number"
     ) {
-      if (h >= 0 && w >= 0) {
+      if (h > 0 && w > 0) {
         document.getElementById("result").innerText =
           "We create for you picture: " +
           Subject +
